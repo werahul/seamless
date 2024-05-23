@@ -1,0 +1,13 @@
+export { default as Home } from "./Home";
+export { default as AboutUs } from "./AboutUs";
+export { default as ContactUs } from "./ContactUs";
+export { default as Career } from "./Career";
+export { default as Privacy } from "./Privacy";
+export { default as TermsAndConditions } from "./TermsAndConditions";
+export { default as ScrollToTop } from "./ScrollToTop";
+export { default as AbuDhabi } from "./AbuDhabi";
+export { default as RasAlKhaimah } from "./RasAlKhaimah";
+export { default as Sharjha } from "./Sharjha";
+export { default as Dubai } from "./Dubai";
+export { default as Mice } from "./Mice";
+export { default as Leisure } from "./Leisure";
