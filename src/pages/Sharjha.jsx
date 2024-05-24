@@ -49,7 +49,7 @@ const Sharjha = () => {
     <div className="bg-[#F5F5F5]">
       <Navbar />
 
-      <section className="px-20 pt-40 max-container">
+      <section className="lg:px-20 px-5 lg:pt-40 pt-36 max-container">
         <div className="flex items-center space-x-3">
           <Link to="/">
             <p className="font-poppins text-[20px] text-[#A6A6A6]">Home</p>
@@ -61,15 +61,15 @@ const Sharjha = () => {
         </div>
       </section>
 
-      <section className="flex px-20 py-20 space-x-16 max-container">
-        <div className="w-[50%]">
-          <img src={main} alt="" />
+      <section className="lg:flex lg:px-20 px-5 lg:pt-20 lg:pb-20 pt-14 pb-20 lg:space-x-16 max-container">
+        <div className="lg:w-[50%]">
+          <img src={main} alt="" className="w-full" />
         </div>
-        <div className="w-[50%]">
-          <p className="font-poppins font-semibold text-[48px] leading-[56px] text-[#FF7843]">
+        <div className="lg:w-[50%] lg:mt-0 mt-10">
+          <p className="font-poppins font-semibold lg:text-[48px] text-[40px] lg:leading-[56px] leading-[48px] text-[#FF7843]">
             Unveiling Sharjah: <br /> Arabia's Cultural Jewel
           </p>
-          <p className="font-poppins text-[16px] leading-[26px] tracking-[2%] text-justify mt-8 text-[#303030]">
+          <p className="font-poppins lg:text-[16px] text-[14px] lg:leading-[26px] leading-[24px] tracking-[2%] text-justify lg:mt-8 mt-5  text-[#333333]">
             Situated on the Arabian Gulf coast, Sharjah is one of the seven
             emirates that make up the United Arab Emirates (UAE). Known as the
             "Cultural Capital of the UAE," Sharjah boasts a rich history,
@@ -87,14 +87,14 @@ const Sharjha = () => {
         </div>
       </section>
 
-      <section className="py-20 max-container">
+      <section className="lg:py-20 px-5 lg:px-0 max-container">
         <div className="flex items-center justify-center">
-          <p className="font-poppins font-semibold text-[48px] leading-[62px] text-center text-[#FF7843] w-[700px]">
+          <p className="font-poppins font-semibold lg:text-[48px] text-[40px] lg:leading-[62px] leading-[48px] lg:text-center text-[#FF7843] w-[700px]">
             Tourist Places & Attractions to Visit in Sharjah
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-7 px-20 mt-14">
+        <div className="grid lg:grid-cols-3  grid-cols-1 gap-7 lg:px-20 px-0 lg:mt-14 mt-8 lg:mb-0 mb-20">
           {destinations.map((destination, index) => (
             <div className="relative" key={index}>
               <img src={destination.image} alt="" />

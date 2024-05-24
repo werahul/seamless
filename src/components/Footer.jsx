@@ -28,7 +28,11 @@ const Footer = () => {
         <div className="max-container flex  flex-col lg:flex-row items-start  justify-between lg:space-y-0 space-y-5 w-full">
           <div className="border-b border-[#333333] lg:hidden block"></div>
           <div className="lg:hidden block w-[225px] ">
-            <img src={footerLogo} alt="" className="lg:w-[270px] w-[203px] -mt-14 -ml-2 lg:mb-0 mb-2" />
+            <img
+              src={footerLogo}
+              alt=""
+              className="lg:w-[270px] w-[203px] -mt-14 -ml-2 lg:mb-0 mb-2"
+            />
             <p className="font-poppins text-[16px] lg:leading-[23px] leading-[26px] ">
               {" "}
               <span className="font-semibold">Dubai Head Office:</span> <br />
@@ -53,11 +57,11 @@ const Footer = () => {
                 activeIndex === 1 ? "block" : "hidden"
               }`}
             >
-              <li>
+              {/* <li>
                 <Link to="/" className="hover:text-[#ff7843] transition-all">
                   Home
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link
                   to="/packages"
@@ -65,7 +69,7 @@ const Footer = () => {
                 >
                   Packages
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/mice"
@@ -81,64 +85,16 @@ const Footer = () => {
                 >
                   Leisure
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
-          <div className="lg:hidden block w-full">
-          <div
-            className="flex items-center justify-between w-[100%]"
-            onClick={() => toggleAccordion(1)}
-          >
-            <h4 className="font-semibold text-[24px] text-[#ff7843] flex justify-between items-center">
-              <span>Destinations</span>
-            </h4>
-            <p className="text-[30px] text-[#ff7843]">
-              {getAccordionIcon(1)}
-            </p>
-          </div>
-          <ul
-            className={`mt-2 space-y-1 ${
-              activeIndex === 1 ? "block" : "hidden"
-            }`}
-          >
-            <li>
-              <Link to="/" className="hover:text-[#ff7843] transition-all">
-                Home
-              </Link>
-            </li>
-            {/* <li>
-              <Link
-                to="/packages"
-                className="hover:text-[#ff7843] transition-all"
-              >
-                Packages
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/mice"
-                className="hover:text-[#ff7843] transition-all"
-              >
-                MICE
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/leisure"
-                className="hover:text-[#ff7843] transition-all"
-              >
-                Leisure
-              </Link>
-            </li> */}
-          </ul>
-        </div>
           <div className="lg:hidden block w-full">
             <div
               className="flex items-center justify-between w-[100%]"
               onClick={() => toggleAccordion(2)}
             >
               <h4 className="font-semibold text-[24px] text-[#ff7843] flex justify-between items-center">
-                <span>About Us</span>
+                <span>Destinations</span>
               </h4>
               <p className="text-[30px] text-[#ff7843]">
                 {getAccordionIcon(2)}
@@ -147,6 +103,57 @@ const Footer = () => {
             <ul
               className={`mt-2 space-y-1 ${
                 activeIndex === 2 ? "block" : "hidden"
+              }`}
+            >
+              <li>
+                <Link
+                  to="/Abu-Dhabi"
+                  className="hover:text-[#ff7843] transition-all"
+                >
+                  Abu Dhabi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Dubai"
+                  className="hover:text-[#ff7843] transition-all"
+                >
+                  Dubai
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Ras-Al-Khaimah"
+                  className="hover:text-[#ff7843] transition-all"
+                >
+                  Ras Al Khaimah
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Sharjah"
+                  className="hover:text-[#ff7843] transition-all"
+                >
+                  Sharjah
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:hidden block w-full">
+            <div
+              className="flex items-center justify-between w-[100%]"
+              onClick={() => toggleAccordion(3)}
+            >
+              <h4 className="font-semibold text-[24px] text-[#ff7843] flex justify-between items-center">
+                <span>About Us</span>
+              </h4>
+              <p className="text-[30px] text-[#ff7843]">
+                {getAccordionIcon(3)}
+              </p>
+            </div>
+            <ul
+              className={`mt-2 space-y-1 ${
+                activeIndex === 3 ? "block" : "hidden"
               }`}
             >
               <li>
@@ -165,7 +172,15 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              {/* <li>
+              <li>
+                <Link
+                  to="/careers"
+                  className="hover:text-[#ff7843] transition-all"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
                 <Link
                   to="/terms-and-conditions"
                   className="hover:text-[#ff7843] transition-all"
@@ -175,20 +190,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/privacy"
+                  to="/privacy-policy"
                   className="hover:text-[#ff7843] transition-all"
                 >
                   Privacy Policy
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/careers"
-                  className="hover:text-[#ff7843] transition-all"
-                >
-                  Careers
-                </Link>
-              </li> */}
             </ul>
           </div>
           <div className="lg:block hidden  w-[260px]  ">
@@ -320,7 +327,6 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
-              
             </ul>
           </div>
 

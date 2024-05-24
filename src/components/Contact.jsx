@@ -88,8 +88,26 @@ const Contact = () => {
                       placeholder="Enquiry Type*"
                       className="w-full text-[14px] outline-none font-nunito transition-all lg:h-12 h-[39px] rounded-[4px]  bg-white bg-opacity-5 border border-white  px-2 text-[#fff]"
                     >
-                      <option value="" className="text-black">
+                      <option value="" disabled>
                         Enquiry Type*
+                      </option>
+                      <option value="" className="text-black">
+                        Tour Packages
+                      </option>
+                      <option value="" className="text-black">
+                        Hotel Bookings
+                      </option>
+                      <option value="" className="text-black">
+                        Visa service
+                      </option>
+                      <option value="" className="text-black">
+                        Sight seeing
+                      </option>
+                      <option value="" className="text-black">
+                        Exercusion
+                      </option>
+                      <option value="" className="text-black">
+                        Transportation
                       </option>
                       {/* <option value="Videography" className="text-black">
                     Videography

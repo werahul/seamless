@@ -44,7 +44,7 @@ const LocateUs = () => {
         </div>
         <div className="bg-[#f5f5f5] lg:hidden lg:space-x-4 flex flex-col lg:w-[461px] py-6 lg:rounded-[8px] ">
           <div className="">
-            <img src={mapMobile} alt="" />
+            <img src={mapMobile} alt="" className="w-full"/>
           </div>
           <div className="px-5 mt-5">
             <a
