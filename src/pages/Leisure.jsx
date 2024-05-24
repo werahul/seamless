@@ -18,7 +18,7 @@ const Leisure = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <Navbar />
-      <section className="px-20 pt-44 max-container">
+      <section className="px-5 lg:px-20 pt-32 lg:pt-44 max-container">
         <div className="flex items-center space-x-3">
           <Link to="/">
             <p className="font-poppins text-[20px] text-[#A6A6A6]">Home</p>
@@ -29,16 +29,16 @@ const Leisure = () => {
           </p>
         </div>
       </section>
-      <section className="flex px-20 pt-16 pb-32 space-x-20 max-container">
-        <div className="w-[50%]">
+      <section className="flex flex-col lg:flex-row px-5 lg:px-20 pt-10 pb-16 lg:pb-32 space-y-10 lg:space-y-0 lg:space-x-20 max-container">
+        <div className="lg:w-[50%]">
           <img src={main} alt="" />
         </div>
-        <div className="w-[50%]">
-          <p className="font-poppins font-semibold text-[48px] leading-[56px] text-[#FF7843]">
+        <div className="lg:w-[50%]">
+          <p className="font-poppins font-semibold text-[40px] lg:text-[48px] leading-[50px] lg:leading-[56px] text-[#FF7843]">
             Are you a Travel <br />
             Business Owner?
           </p>
-          <p className="font-poppins text-[16px] leading-[26px] tracking-[2%] text-justify mt-8 text-[#303030]">
+          <p className="font-poppins text-sm lg:text-[16px] lg:leading-[26px] leading-[24px] tracking-[2%] text-justify mt-4 lg:mt-8 text-[#303030]">
             Established in 2008, Seamless DMC stands as the foremost UAE
             Destination Management Company. With a legacy of excellence spanning
             over a decade, we specialize in delivering unparalleled FITs,
@@ -50,18 +50,18 @@ const Leisure = () => {
           </p>
         </div>
       </section>
-      <div className="toursBg h-auto pt-28 pb-24 ">
+      <div className="toursBg px-5 lg:px-0 h-auto pt-20 lg:pt-28 pb-24 ">
         <div className="max-container">
-          <p className="font-poppins font-semibold text-[48px] text-[#ffffff] text-center ">
+          <p className="font-poppins font-semibold text-[40px] lg:text-[48px] text-[#ffffff] lg:text-center ">
             Top Attractions & Tours
           </p>
           <div className="horiScroll ">
-            <div className="horiScroll2 bg-white h-[550px] w-[420px]  p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px]  p-4 rounded-[4.5px] ">
               <img src={le1} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-xl lg:text-[22px]  text-[#006E99] mt-5">
                 Burj Khalifa
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Ever been on top of the world? Experience a spellbinding view of
                 Dubai from the world’s tallest architectural edifice with over
                 160+ stories – Burj Khalifa, which has already outdone most of
@@ -69,24 +69,24 @@ const Leisure = () => {
                 structure, and highest observation deck, etc.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le2} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 Ferrari World
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Experience speed and excitement at Ferrari World Abu Dhabi, the
                 world's first Ferrari-branded theme park. Feel the rush on rides
                 like Formula Rossa, and explore exhibits showcasing the history
                 of the legendary car manufacturer.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le3} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 Dubai Parks & Resorts
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Step into the world of fun and excitement, home to endless
                 entertainment. Dubai Parks and Resorts are Middle East’s largest
                 integrated leisure and theme park destination located on Sheikh
@@ -94,60 +94,60 @@ const Leisure = () => {
                 three theme parks and one waterpark.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le4} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 Louvre Abu Dhabi
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Discover art and culture at Louvre Abu Dhabi, a stunning
                 architectural marvel. Explore captivating exhibits showcasing
                 artworks from around the world, spanning millennia of human
                 creativity and heritage.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le5} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 BAPS Hindu Mandir
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Experience spiritual tranquility at BAPS Hindu Mandir, a
                 masterpiece of traditional Indian architecture. Admire intricate
                 carvings, participate in devotional rituals, and find inner
                 peace amidst serene surroundings.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le6} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 Museum of the Future
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Step into the future at the Museum of the Future, where
                 innovation and imagination collide. Immerse yourself in
                 interactive exhibits, exploring groundbreaking technologies and
                 envisioning the possibilities of tomorrow.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le7} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 Yas Waterworld 
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Dive into excitement at Yas Waterworld, Abu Dhabi's premier
                 waterpark. With over 40 thrilling rides and attractions,
                 including the world's first and largest hydromagnetic - powered
                 tornado waterslide, it's a splash-tastic adventure for all.
               </p>
             </div>
-            <div className="horiScroll2 bg-white h-[550px] w-[420px] p-4 rounded-[4.5px] ">
+            <div className="horiScroll2 bg-white lg:h-[550px] w-[420px] p-4 rounded-[4.5px] ">
               <img src={le8} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
+              <p className=" font-poppins font-semibold text-lg lg:text-[22px]  text-[#006E99] mt-5">
                 Desert Safari
               </p>
-              <p className=" font-poppins  text-[16px] leading-[26px] mt-3">
+              <p className=" font-poppins  text-[12px] lg:text-[16px] leading-[20px] lg:leading-[26px] mt-3">
                 Embark on an unforgettable adventure with our Desert Safari
                 experience. Explore the majestic dunes, enjoy a traditional
                 Arabian feast, and witness cultural performances under the

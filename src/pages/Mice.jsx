@@ -41,7 +41,7 @@ const Mice = () => {
           </div>
         </div>
   </section>*/}
-        <section className="px-20 pt-36 bg-[#F5F5F5]">
+        <section className="px-5 lg:px-20 pt-36 lg:pt-44 bg-[#F5F5F5]">
           <div className="flex items-center space-x-3">
             <Link to="/">
               <p className="font-poppins text-[20px] text-[#A6A6A6]">Home</p>
@@ -52,11 +52,11 @@ const Mice = () => {
             </p>
           </div>
         </section>
-        <section className="px-20 py-20 bg-[#F5F5F5]">
-          <p className="font-poppins font-semibold text-[48px] leading-[56px] text-[#FF7843]">
+        <section className="px-5 lg:px-20 py-10 lg:py-20 bg-[#F5F5F5]">
+          <p className="font-poppins font-semibold text-[40px] lg:text-[48px] lg:leading-[56px] leading-[48px] text-[#FF7843]">
             MICE - Meetings, Incentives, Conferences and Exhibitions 
           </p>
-          <p className="font-poppins text-[16px] leading-[26px] tracking-[2%] text-justify mt-8 text-[#303030]">
+          <p className="font-poppins text-sm lg:text-[16px] lg:leading-[26px] leading-[24px] tracking-[2%] lg:text-justify lg:mt-8 mt-6 text-[#333333]">
             Seamless DMC offers exceptional MICE solutions in the UAE, with a
             focus on Abu Dhabi and Dubai. <br /> <br />
             The UAE is the perfect destination for incentive trips and
@@ -77,25 +77,25 @@ const Mice = () => {
           </p>
         </section>
 
-        <section className="px-20 py-20 bg-[#006E99] grid grid-cols-2 gap-10">
-          <div className="bg-white h-[570px] p-8 rounded-[4.5px] ">
+        <section className="px-5 lg:px-20 py-20 bg-[#006E99] grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="bg-white lg:h-[570px] p-5 lg:p-8 rounded-[4.5px] ">
             <img src={mice1} alt="" />
-            <p className=" font-poppins font-semibold text-[24px]  text-[#006E99] mt-4">
+            <p className=" font-poppins font-semibold text-xl lg:text-[24px]  text-[#006E99] mt-4">
               Conference Planning
             </p>
-            <p className=" font-poppins  text-[18px] leading-[28px] mt-2">
+            <p className=" font-poppins  text-sm lg:text-[18px] lg:leading-[28px] leading-[24px] mt-2">
               From the concept through the creative delivery of the event, our
               team presents the most viable options for your conferences. We
               work with the company to deliver a memorable event for the
               delegates along with an instantly visible ROI.
             </p>
           </div>
-          <div className="bg-white h-[570px] p-8 rounded-[4.5px]">
+          <div className="bg-white lg:h-[570px] p-5 lg:p-8 rounded-[4.5px]">
             <img src={mice2} alt="" />
-            <p className=" font-poppins font-semibold text-[24px]  text-[#006E99] mt-4">
+            <p className=" font-poppins font-semibold text-xl lg:text-[24px]  text-[#006E99] mt-4">
               Exhibitions
             </p>
-            <p className=" font-poppins  text-[18px] leading-[28px] mt-2">
+            <p className=" font-poppins  text-sm lg:text-[18px] lg:leading-[28px] leading-[24px] mt-2">
               Our in-house team designs creative structures to showcase your
               company at international exhibitions. We plot out the
               possibilities within the exhibition space provided and ensure
@@ -104,15 +104,15 @@ const Mice = () => {
           </div>
         </section>
 
-        <section className="px-20 pt-32 pb-32 bg-[#F5F5F5]">
-          <div className="flex">
-            <div className="w-[50%]">
-              <p className="font-poppins font-semibold text-[48px] leading-[56px] text-[#FF7843]">
+        <section className="px-5 lg:px-20 pt-20 lg:pt-32 pb-20 lg:pb-32 bg-[#F5F5F5]">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-[50%]">
+              <p className="font-poppins font-semibold text-[40px] lg:text-[48px] leading-[52px] lg:leading-[56px] text-[#FF7843]">
                 Corporate Events Planning
               </p>
             </div>
-            <div className="w-[60%]">
-              <p className="font-poppins text-[16px] leading-[26px] tracking-[2%] text-[#333333]">
+            <div className="mt-10 lg:mt-0 lg:w-[60%]">
+              <p className="font-poppins lg:text-[16px] text-[14px] lg:leading-[26px] leading-[24px] tracking-[2%] text-[#333333]">
                 From initial planning to flawless execution, our dedicated team
                 ensures your corporate events are a resounding success. We
                 meticulously negotiate the best deals with service providers,
@@ -125,52 +125,69 @@ const Mice = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-8 mt-14">
-            <div className="bg-white h-[475px] p-4 rounded-[4.5px] ">
-              <img src={mice1_1} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
-                Corporate Events
-              </p>
-              <p className=" font-poppins  text-[16px] leading-[24px] mt-3">
-                From the initial pitch to execution, our experts plan corporate
-                events with the highest level of professionalism. We assist you
-                to get the best deals from top-quality service providers and
-                achieve the highest standards of service delivery.
-              </p>
-            </div>
-            <div className="bg-white h-[475px] p-4 rounded-[4.5px] ">
-              <img src={mice1_2} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
-                On-site Planning
-              </p>
-              <p className=" font-poppins  text-[16px] leading-[24px] mt-3">
-                Incentives & Conferences by Seamless DMC offers on-site
-                management helping you to perfect every single detail of your
-                event. From registration to hosting, we make sure your event
-                completes in perfection.
-              </p>
-            </div>
-            <div className="bg-white h-[475px] p-4 rounded-[4.5px] ">
-              <img src={mice1_3} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
-                Creative Touch
-              </p>
-              <p className=" font-poppins  text-[16px] leading-[24px] mt-3">
-                From brainstorming the concept to implementing your corporate
-                message in the most interesting method our team of
-                experts strives to enhance your event with creative themes.
-              </p>
+          <div className="overflow-x-hidden">
+            <div className="overflow-x-auto w-full">
+              <div className="w-[280vw] md:w-full grid grid-cols-3 gap-8 mt-14">
+                <div className="bg-white border-[1px] border-[#ff7843] lg:h-[475px] p-4 rounded-[4.5px] min-w-[300px]">
+                  <img
+                    src={mice1_1}
+                    alt="Corporate Events"
+                    className="w-full h-auto"
+                  />
+                  <p className="font-poppins font-semibold text-base lg:text-[22px] text-[#006E99] mt-5">
+                    Corporate Events
+                  </p>
+                  <p className="font-poppins text-[12px] lg:text-[16px] lg:leading-[24px] leading-[22px] mt-3">
+                    From the initial pitch to execution, our experts plan
+                    corporate events with the highest level of professionalism.
+                    We assist you to get the best deals from top-quality service
+                    providers and achieve the highest standards of service
+                    delivery.
+                  </p>
+                </div>
+                <div className="bg-white border border-[#ff7843] lg:h-[475px] p-4 rounded-[4.5px] min-w-[300px]">
+                  <img
+                    src={mice1_2}
+                    alt="On-site Planning"
+                    className="w-full h-auto"
+                  />
+                  <p className="font-poppins font-semibold text-base lg:text-[22px] text-[#006E99] mt-5">
+                    On-site Planning
+                  </p>
+                  <p className="font-poppins text-[12px] lg:text-[16px] lg:leading-[24px] leading-[22px] mt-3">
+                    Incentives & Conferences by Seamless DMC offers on-site
+                    management helping you to perfect every single detail of
+                    your event. From registration to hosting, we make sure your
+                    event completes in perfection.
+                  </p>
+                </div>
+                <div className="bg-white border border-[#ff7843] lg:h-[475px] p-4 rounded-[4.5px] min-w-[300px]">
+                  <img
+                    src={mice1_3}
+                    alt="Creative Touch"
+                    className="w-full h-auto"
+                  />
+                  <p className="font-poppins font-semibold text-base lg:text-[22px] text-[#006E99] mt-5">
+                    Creative Touch
+                  </p>
+                  <p className="font-poppins text-[12px] lg:text-[16px] lg:leading-[24px] leading-[22px] mt-3">
+                    From brainstorming the concept to implementing your
+                    corporate message in the most interesting method our team of
+                    experts strives to enhance your event with creative themes.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="flex mt-24">
-            <div className="w-[40%]">
-              <p className="font-poppins font-semibold text-[48px] leading-[56px] text-[#FF7843]">
+          <div className="flex flex-col lg:flex-row mt-20 lg:mt-24">
+            <div className="lg:w-[40%]">
+              <p className="font-poppins font-semibold text-[40px] lg:text-[48px] leading-[50px] lg:leading-[56px] text-[#FF7843]">
                 Incentive Programs
               </p>
             </div>
-            <div className="w-[60%]">
-              <p className="font-poppins text-[16px] leading-[26px] tracking-[2%] text-[#333333]">
+            <div className="mt-10 lg:mt-0 lg:w-[60%]">
+              <p className="font-poppins lg:text-[16px] text-[14px] lg:leading-[26px] leading-[24px] tracking-[2%] text-[#333333]">
                 Elevate your corporate events with our engaging team-building
                 activities, designed to entertain and inspire your delegates.
                 Our theme-based incentive programs add sophistication and
@@ -184,42 +201,46 @@ const Mice = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="bg-white h-[475px] p-4 rounded-[4.5px] ">
-              <img src={mice1_4} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
-                Incentive Programs
-              </p>
-              <p className=" font-poppins  text-[16px] leading-[24px] mt-3">
-                Our team consults, conceptualizes, and delivers high-touch
-                incentive programs to some of the top international brands,
-                intertwining the touch of local Arabia with the preferences of
-                your guests.
-              </p>
-            </div>
-            <div className="bg-white h-[475px] p-4 rounded-[4.5px] ">
-              <img src={mice1_5} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
-                Food and Beverage
-              </p>
-              <p className=" font-poppins  text-[16px] leading-[24px] mt-3">
-                Our incentives & Conferences caters to the need of all your
-                delegates, arranging a gamut of world cuisines from authentic
-                Arabic cuisine to Far East Asian and Modern European dishes.
-                Experience dining like never before.
-              </p>
-            </div>
-            <div className="bg-white h-[475px] p-4 rounded-[4.5px]">
-              <img src={mice1_6} alt="" />
-              <p className=" font-poppins font-semibold text-[22px]  text-[#006E99] mt-5">
-                Destination Themes
-              </p>
-              <p className=" font-poppins  text-[16px] leading-[24px] mt-3">
-                We help incorporate your annual corporate message into a 4-night
-                program or create a destination theme for your incentive program
-                for the year. We go that extra mile to ensure perfection in all
-                your corporate events.
-              </p>
+          <div className="overflow-x-hidden">
+            <div className="overflow-x-auto w-full">
+              <div className="w-[280vw] md:w-full grid grid-cols-3 gap-8 mt-14">
+                <div className="bg-white border border-[#ff7843] lg:h-[475px] p-4 rounded-[4.5px] ">
+                  <img src={mice1_4} alt="" />
+                  <p className=" font-poppins font-semibold text-base lg:text-[22px]  text-[#006E99] mt-5">
+                    Incentive Programs
+                  </p>
+                  <p className=" font-poppins text-[12px] lg:text-[16px] lg:leading-[24px] leading-[22px] mt-3">
+                    Our team consults, conceptualizes, and delivers high-touch
+                    incentive programs to some of the top international brands,
+                    intertwining the touch of local Arabia with the preferences
+                    of your guests.
+                  </p>
+                </div>
+                <div className="bg-white border border-[#ff7843] lg:h-[475px] p-4 rounded-[4.5px] ">
+                  <img src={mice1_5} alt="" />
+                  <p className=" font-poppins font-semibold text-base lg:text-[22px]  text-[#006E99] mt-5">
+                    Food and Beverage
+                  </p>
+                  <p className=" font-poppins  text-[12px] lg:text-[16px] lg:leading-[24px] leading-[22px] mt-3">
+                    Our incentives & Conferences caters to the need of all your
+                    delegates, arranging a gamut of world cuisines from
+                    authentic Arabic cuisine to Far East Asian and Modern
+                    European dishes. Experience dining like never before.
+                  </p>
+                </div>
+                <div className="bg-white border border-[#ff7843] lg:h-[475px] p-4 rounded-[4.5px]">
+                  <img src={mice1_6} alt="" />
+                  <p className=" font-poppins font-semibold text-base lg:text-[22px]  text-[#006E99] mt-5">
+                    Destination Themes
+                  </p>
+                  <p className=" font-poppins  text-[12px] lg:text-[16px] lg:leading-[24px] leading-[22px] mt-3">
+                    We help incorporate your annual corporate message into a
+                    4-night program or create a destination theme for your
+                    incentive program for the year. We go that extra mile to
+                    ensure perfection in all your corporate events.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

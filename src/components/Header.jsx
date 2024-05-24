@@ -3,14 +3,20 @@ import { videoHeader, videoHeader2 } from "../assets/videos";
 
 const Header = () => {
   return (
-    <div className="headerBg font-poppins h-[120vh]">
-      <video src={videoHeader} className="w-full " autoPlay muted loop></video>
-      <div className="h-[120vh] flex items-center justify-center bgHeader absolute text-center text-white top-[0%] bg-opacity-40 space-x-10 w-full left-[50%] transform pt-[550px] pb-[190px] px-10 translate-x-[-50%]  z-40">
-        <h1 className="text-[50px] leading-[55px] font-semibold ">
+    <div className="relative font-poppins pt-24 lg:pt-0 lg:h-[115vh]">
+      <video
+        src={videoHeader}
+        className="w-full h-auto"
+        autoPlay
+        muted
+        loop
+      ></video>
+      <div className="absolute inset-0 flex items-center justify-center bgHeader text-white space-y-4 lg:space-y-0 space-x-3 lg:space-x-10 px-4 pt-20 lg:pt-[360px] lg:px-10 z-40">
+        <h1 className=" pt-4 lg:pt-0 text-sm lg:text-4xl lg:leading-snug font-semibold">
           Your Trusted DMC <br /> Partner for UAE
         </h1>
-        <div className="w-0.5 h-28 bg-white"></div>
-        <p className="text-[#ff7843] text-[21px]  font-semibold text-left">
+        <div className="block w-0.5 h-20 lg:h-28 bg-white"></div>
+        <p className="text-left text-[#ff7843] text-sm lg:text-lg font-semibold">
           Best Deals | 24/7 Availability <br /> | Worldwide Presence
         </p>
       </div>

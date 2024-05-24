@@ -394,4 +394,6 @@
 
 .bgHeader{
   background: linear-gradient(179.56deg, rgba(0, 0, 0, 0) 0.44%, rgba(0, 0, 0, 0.86) 92.51%);
+  background-size: cover;
+ 
 }

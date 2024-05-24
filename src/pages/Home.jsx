@@ -19,6 +19,8 @@ import {
   partner5,
 } from "../assets/Images";
 import CirclePathAnimation from "../components/CirclePathAnimation";
+import TestimonialsMobile from "../components/TestimonialsMobile";
+import FeaturedHomeMobile from "../components/FeaturedHomeMobile";
 
 const Home = () => {
   const images = [partner1, partner2, partner3, partner4, partner5];
@@ -29,12 +31,22 @@ const Home = () => {
       <AboutHome />
       {/* <CirclePathAnimation /> */}
       <ExpertiseHome />
-      <FeaturedHome />
-      <ChooseHome />
-      <Testimonials />
-      <div className="bg-[#f5f5f5] lg:hidden block">
-        <AutoScroll images={images} />
+      <div className="hidden lg:block">
+        <FeaturedHome />
       </div>
+      <div className="block lg:hidden">
+        <FeaturedHomeMobile />
+      </div>
+      <ChooseHome />
+      <div className="hidden lg:block">
+        <Testimonials />
+      </div>
+      <div className="lg:hidden block">
+        <TestimonialsMobile />
+      </div>
+      {/* <div className="bg-[#f5f5f5] lg:hidden block">
+        <AutoScroll images={images} />
+      </div> */}
 
       <Contact />
       <Footer />

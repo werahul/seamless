@@ -17,7 +17,7 @@ const FeaturedHome = () => {
                 </h2>
                 <div className="space-y-2">
                   <p className="text-white font-semibold text-[18px]">
-                    Sheikh Zayed Mosque 
+                    Sheikh Zayed Grand Mosque
                   </p>
                   <img src={stars} alt="" className="w-[98px] h-auto" />
                 </div>

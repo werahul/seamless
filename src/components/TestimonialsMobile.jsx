@@ -22,7 +22,7 @@ import {
 } from "../assets/Images";
 import AutoScroll from "./AutoScroll";
 
-const Testimonials = () => {
+const TestimonialsMobile = () => {
   const images = [
     partner1,
     partner2,
@@ -77,13 +77,6 @@ const Testimonials = () => {
     );
   };
 
-  // Reorder testimonials array based on activeIndex
-  const reorderedTestimonials = [
-    testimonials[activeIndex],
-    ...testimonials.slice(activeIndex + 1),
-    ...testimonials.slice(0, activeIndex),
-  ];
-
   return (
     <div className="bg-[#f4fcff] font-poppins">
       <div className="">
@@ -94,57 +87,53 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="max-container relative testimonials lg:py-[84px] py-20 lg:px-0 px-5 ">
-          <h1 className="font-semibold text-[48px] text-[#ff7834] text-center">
-            Our Happy Travel Agents
+          <h1 className="font-semibold lg:text-[48px] text-[40px] text-[#ff7834] lg:text-center">
+            Our Happy <br /> Travel Agents
           </h1>
-          <div className="flex mt-[44px] space-x-6 justify-center">
-            {reorderedTestimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`w-[500px] rounded-[8px] boxDrop bg-white ${
-                  index === 1
-                    ? "transform border scale-100 opacity-100"
-                    : "transform scale-90 opacity-40"
-                }`}
-              >
-                <div className="p-[19px] bg-white flex items-center space-x-6 w-full ">
-                  <img
-                    src={testimonial.image}
-                    alt=""
-                    className="w-[69px] h-auto"
-                  />
-                  <div className="">
-                    <h3 className="font-semibold text-[20px] text-[#001B33] opacity-80">
-                      {testimonial.name}
-                    </h3>
-                    <p className="text-[14px] text-[#001B33]">
-                      {testimonial.designation}
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-white p-[19px] rounded-t-[8px]">
-                  <p className="text-[#333333]">{testimonial.quote}</p>
+          <div className="flex mt-[44px] justify-center">
+            <div
+              className={`w-[500px] rounded-[8px] boxDrop bg-white transform border scale-100 opacity-100`}
+            >
+              <div className="p-[19px] bg-white flex items-center space-x-6 w-full">
+                <img
+                  src={testimonials[activeIndex].image}
+                  alt=""
+                  className="w-[69px] h-auto"
+                />
+                <div>
+                  <h3 className="font-semibold text-[20px] text-[#001B33] opacity-80">
+                    {testimonials[activeIndex].name}
+                  </h3>
+                  <p className="text-[14px] text-[#001B33]">
+                    {testimonials[activeIndex].designation}
+                  </p>
                 </div>
               </div>
-            ))}
+              <div className="bg-white p-[19px] rounded-t-[8px]">
+                <p className="text-[#333333]">
+                  {testimonials[activeIndex].quote}
+                </p>
+              </div>
+            </div>
           </div>
-          <button
-            onClick={handlePrev}
-            className=" top-80 left-[29%] absolute  text-gray-800 font-bold py-2 px-4 rounded-l"
-          >
-            <img src={leftTest} alt="" className="w-10" />
-          </button>
-
-          <button
-            onClick={handleNext}
-            className=" top-80 right-[29%] absolute  text-gray-800 font-bold py-2 px-4 rounded-r"
-          >
-            <img src={rightTest} alt="" className="w-10" />
-          </button>
+          <div className="flex  justify-center mt-6">
+            <button
+              onClick={handlePrev}
+              className="text-gray-800 absolute left-[-3%] top-[52%] font-bold py-2 px-4"
+            >
+              <img src={leftTest} alt="Previous" className="w-10" />
+            </button>
+            <button
+              onClick={handleNext}
+              className="text-gray-800 absolute right-[0%] top-[52%] font-bold py-2 px-4"
+            >
+              <img src={rightTest} alt="Next" className="w-10" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Testimonials;
+export default TestimonialsMobile;

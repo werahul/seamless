@@ -20,7 +20,7 @@ const AboutHome = () => {
       motionPath: {
         path: "#mainPath",
         start: 0,
-        end: 0.8,
+        end: 0.95,
       },
       scrollTrigger: {
         trigger: "#rect",
@@ -32,16 +32,16 @@ const AboutHome = () => {
   }, []);
 
   return (
-    <div className="lg:px-24 px-5 lg:py-[130px] py-10 relative bg-[#f5f5f5] font-poppins">
-      <div className="max-container">
-        <div className="absolute">
+    <div className="lg:px-24 px-5 lg:pt-[130px] pt-[80px] pb-[160px] lg:pb-[130px] relative bg-[#f5f5f5] font-poppins">
+      <div className=" max-container">
+        <div className="hidden lg:block absolute">
           <img
             src={aboutLocation}
             alt=""
-            className="locationIcon absolute right-[92px] top-[-40px] w-[29px]"
+            className="locationIcon absolute right-[130px] top-[-40px] w-[29px]"
           />
           <svg
-            width="1202"
+            width="1205"
             // height="664"
             viewBox="0 0 1367 664"
             fill="none"
@@ -56,7 +56,7 @@ const AboutHome = () => {
           >
             <path
               id="mainPath"
-              d="M1245.5 1.5C1224.5 36.5 1318.3 111.369 1281.5 132C1182.5 187.5 179 69 42.4991 228.5C-120.44 418.893 245.499 565 283.499 663"
+              d="M1201.34 1C1180.34 35.4599 1274.15 109.173 1237.35 129.486C1138.34 184.13 153.5 77.5 38.7653 217.605C-98.6903 385.455 184.001 426.177 182.5 428"
               stroke="#006E99"
               strokeOpacity="0.25"
               strokeWidth="2"
@@ -68,14 +68,14 @@ const AboutHome = () => {
           </svg>
         </div>
         <div
-          className="flex lg:flex-row flex-col-reverse items-start lg:space-x-10 pt-0 lg:space-y-0 justify-center"
+          className="flex lg:flex-row flex-col items-start lg:space-x-10 pt-0 lg:space-y-0 justify-center"
           // style={{ zIndex: "2" }}
         >
           <h2 className="font-semibold lg:text-[56px] text-[40px] text-[#ff7843]">
             About Us
           </h2>
           <div className="lg:w-[636px] lg:space-y-2 space-y-4 lg:mt-0 mt-4">
-            <p className="text-[16px] ">
+            <p className="text-[14px] lg:text-[16px] ">
               Seamless DMC is your global travel partner, offering tailored
               solutions across diverse destinations. With trusted partnerships,
               we secure unbeatable deals and unforgettable experiences. Trusted
@@ -83,7 +83,7 @@ const AboutHome = () => {
               transparency. From Dubai to Thailand, Europe to Singapore, we
               cater to all travel needs.
             </p>
-            <p className="text-[16px] ">
+            <p className="text-[14px] lg:text-[16px] ">
               Whether you are planning a romantic honeymoon, a family vacation,
               or a corporate retreat, we have the expertise to create a
               personalized itinerary that exceeds your expectations. Your
